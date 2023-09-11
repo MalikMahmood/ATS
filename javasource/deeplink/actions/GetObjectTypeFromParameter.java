@@ -9,16 +9,8 @@
 
 package deeplink.actions;
 
-import java.awt.List;
-import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Map;
-import com.mendix.core.Core;
 import com.mendix.systemwideinterfaces.core.IContext;
-import com.mendix.systemwideinterfaces.core.IDataType;
 import com.mendix.webui.CustomJavaAction;
-import deeplink.proxies.KeyValue;
 import com.mendix.systemwideinterfaces.core.IMendixObject;
 
 public class GetObjectTypeFromParameter extends CustomJavaAction<java.util.List<IMendixObject>>
@@ -35,21 +27,7 @@ public class GetObjectTypeFromParameter extends CustomJavaAction<java.util.List<
 	public java.util.List<IMendixObject> executeAction() throws Exception
 	{
 		// BEGIN USER CODE
-		ArrayList<IMendixObject> list = new ArrayList<IMendixObject>(); 
-		String[] split = microflowName.split("\\.");
-		
-		if(split.length > 0) {
-			
-			IDataType returnType = Core.getReturnType(microflowName);
-			Map<String,IDataType> inputParameters = Core.getInputParameters(microflowName);
-
-			inputParameters.forEach((k,v)-> {
-				KeyValue kv = new KeyValue(getContext());
-				kv.setKey(v.getObjectType());
-				list.add(kv.getMendixObject());
-			});
-		}
-		return list;
+		throw new com.mendix.systemwideinterfaces.MendixRuntimeException("Java action was not implemented");
 		// END USER CODE
 	}
 
