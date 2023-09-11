@@ -9,17 +9,8 @@
 
 package deeplink.actions;
 
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-import java.util.Map.Entry;
-import com.mendix.core.Core;
 import com.mendix.systemwideinterfaces.core.IContext;
-import com.mendix.systemwideinterfaces.core.IDataType;
 import com.mendix.webui.CustomJavaAction;
-import deeplink.proxies.KeyValue;
 import com.mendix.systemwideinterfaces.core.IMendixObject;
 
 public class GetInputParams extends CustomJavaAction<java.util.List<IMendixObject>>
@@ -36,25 +27,13 @@ public class GetInputParams extends CustomJavaAction<java.util.List<IMendixObjec
 	public java.util.List<IMendixObject> executeAction() throws Exception
 	{
 		// BEGIN USER CODE
-		List<IMendixObject> keyvalueList = new ArrayList();
-		
-		Map<String,IDataType> map= Core.getInputParameters(Microflow);		
-		
-		Iterator it = map.entrySet().iterator();
-		while(it.hasNext()) {
-			Entry mapItem = (Entry)it.next();
-			
-			KeyValue kv = new KeyValue(getContext());
-			kv.setKey(mapItem.getKey().toString());
-			kv.setValue(((IDataType)mapItem.getValue()).getType().toString());
-			keyvalueList.add(kv.getMendixObject());
-		}
-		return keyvalueList;
+		throw new com.mendix.systemwideinterfaces.MendixRuntimeException("Java action was not implemented");
 		// END USER CODE
 	}
 
 	/**
 	 * Returns a string representation of this action
+	 * @return a string representation of this action
 	 */
 	@java.lang.Override
 	public java.lang.String toString()

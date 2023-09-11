@@ -9,15 +9,8 @@
 
 package deeplink.actions;
 
-import java.util.List;
-import com.mendix.core.Core;
-import com.mendix.logging.ILogNode;
 import com.mendix.systemwideinterfaces.core.IContext;
-import com.mendix.systemwideinterfaces.core.IMendixObject;
 import com.mendix.webui.CustomJavaAction;
-import deeplink.proxies.DeepLink;
-import deeplink.proxies.microflows.Microflows;
-import deeplink.utils.DeeplinkUtils;
 
 /**
  * Creates a deeplink configuration using DeepLinkname as identifier.
@@ -49,14 +42,13 @@ public class SetObjectParameterDeeplink extends CustomJavaAction<java.lang.Void>
 	public java.lang.Void executeAction() throws Exception
 	{
 		// BEGIN USER CODE
-		DeeplinkUtils.updateOrCreateDeeplink(getContext(), DeepLinkName, ForceLogin, Description, Microflow, KeepAsHomeDeeplink, Entity, Attribute);
-		
-		return null;
+		throw new com.mendix.systemwideinterfaces.MendixRuntimeException("Java action was not implemented");
 		// END USER CODE
 	}
 
 	/**
 	 * Returns a string representation of this action
+	 * @return a string representation of this action
 	 */
 	@java.lang.Override
 	public java.lang.String toString()
@@ -65,6 +57,5 @@ public class SetObjectParameterDeeplink extends CustomJavaAction<java.lang.Void>
 	}
 
 	// BEGIN EXTRA CODE
-
 	// END EXTRA CODE
 }

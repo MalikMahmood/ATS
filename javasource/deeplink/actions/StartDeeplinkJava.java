@@ -9,7 +9,6 @@
 
 package deeplink.actions;
 
-import com.mendix.core.Core;
 import com.mendix.systemwideinterfaces.core.IContext;
 import com.mendix.webui.CustomJavaAction;
 
@@ -29,13 +28,13 @@ public class StartDeeplinkJava extends CustomJavaAction<java.lang.Boolean>
 	public java.lang.Boolean executeAction() throws Exception
 	{
 		// BEGIN USER CODE
-		Core.addRequestHandler(deeplink.proxies.constants.Constants.getRequestHandlerName()+ "/", new deeplink.implementation.handler.DeeplinkHandler());
-		return true;
+		throw new com.mendix.systemwideinterfaces.MendixRuntimeException("Java action was not implemented");
 		// END USER CODE
 	}
 
 	/**
 	 * Returns a string representation of this action
+	 * @return a string representation of this action
 	 */
 	@java.lang.Override
 	public java.lang.String toString()

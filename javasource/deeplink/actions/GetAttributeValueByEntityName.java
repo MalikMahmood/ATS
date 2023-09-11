@@ -9,10 +9,7 @@
 
 package deeplink.actions;
 
-import java.util.List;
-import com.mendix.core.Core;
 import com.mendix.systemwideinterfaces.core.IContext;
-import com.mendix.systemwideinterfaces.core.IMendixObject;
 import com.mendix.webui.CustomJavaAction;
 
 public class GetAttributeValueByEntityName extends CustomJavaAction<java.lang.String>
@@ -31,25 +28,13 @@ public class GetAttributeValueByEntityName extends CustomJavaAction<java.lang.St
 	public java.lang.String executeAction() throws Exception
 	{
 		// BEGIN USER CODE
-
-		try {
-			List<IMendixObject> list = Core.createXPathQuery(String.format("//%s",Entity))
-				.setOffset(0)
-				.setAmount(1)
-				.execute(getContext());
-			
-			return list.size()==1 ? list.get(0).getValue(getContext(), AttributeName).toString() : null;
-
-		}
-		catch (Exception e) {
-			Core.getLogger(deeplink.implementation.Commons.logNodeName).warn("Unable to retrieve a random object for entity '" + Entity + "'");
-			throw(e);
-		}
+		throw new com.mendix.systemwideinterfaces.MendixRuntimeException("Java action was not implemented");
 		// END USER CODE
 	}
 
 	/**
 	 * Returns a string representation of this action
+	 * @return a string representation of this action
 	 */
 	@java.lang.Override
 	public java.lang.String toString()
