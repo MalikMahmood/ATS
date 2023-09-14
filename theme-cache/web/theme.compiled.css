@@ -26981,7 +26981,7 @@ input[type=radio]:checked:before {
 }
 
 .background-img {
-  background-image: url(Login-background.png);
+  background-image: url(back-img.png);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -27068,12 +27068,16 @@ input[type=radio]:checked:before {
   background-color: #d59fff;
 }
 
-.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a, .mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:hover, .mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:focus {
+.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a,
+.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:hover,
+.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:focus {
   color: #fff;
   background-color: #d59fff;
 }
 
-.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a, .mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:hover, .mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:focus {
+.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a,
+.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:hover,
+.mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:focus {
   color: #fff;
   background-color: #d59fff;
   width: 160px;
@@ -27092,24 +27096,44 @@ input[type=radio]:checked:before {
   margin-left: 10px;
 }
 
-.cust-butt .btn, .cust-butt .btn-default {
+.cust-butt .btn,
+.cust-butt .btn-default {
   color: #6c717e !important;
   border-color: #e7e7e9;
   background-color: #efe2f8;
 }
-.cust-butt .btn:hover, .cust-butt .btn:focus, .cust-butt .btn:active, .cust-butt .btn.active, .cust-butt .open > .btn.dropdown-toggle, .cust-butt .btn-default:hover, .cust-butt .btn-default:focus, .cust-butt .btn-default:active, .cust-butt .btn-default.active, .cust-butt .open > .btn-default.dropdown-toggle {
+.cust-butt .btn:hover,
+.cust-butt .btn:focus,
+.cust-butt .btn:active,
+.cust-butt .btn.active,
+.cust-butt .open > .btn.dropdown-toggle,
+.cust-butt .btn-default:hover,
+.cust-butt .btn-default:focus,
+.cust-butt .btn-default:active,
+.cust-butt .btn-default.active,
+.cust-butt .open > .btn-default.dropdown-toggle {
   color: #ffffff !important;
   border-color: #e7e7e9;
   background-color: #d59fff;
 }
 
-.cusm-pg-bt .btn, .cusm-pg-bt .btn-default {
+.cusm-pg-bt .btn,
+.cusm-pg-bt .btn-default {
   color: #6c717e !important;
   border-color: #e7e7e9;
   background-color: #efe2f8;
   width: 240px;
 }
-.cusm-pg-bt .btn:hover, .cusm-pg-bt .btn:focus, .cusm-pg-bt .btn:active, .cusm-pg-bt .btn.active, .cusm-pg-bt .open > .btn.dropdown-toggle, .cusm-pg-bt .btn-default:hover, .cusm-pg-bt .btn-default:focus, .cusm-pg-bt .btn-default:active, .cusm-pg-bt .btn-default.active, .cusm-pg-bt .open > .btn-default.dropdown-toggle {
+.cusm-pg-bt .btn:hover,
+.cusm-pg-bt .btn:focus,
+.cusm-pg-bt .btn:active,
+.cusm-pg-bt .btn.active,
+.cusm-pg-bt .open > .btn.dropdown-toggle,
+.cusm-pg-bt .btn-default:hover,
+.cusm-pg-bt .btn-default:focus,
+.cusm-pg-bt .btn-default:active,
+.cusm-pg-bt .btn-default.active,
+.cusm-pg-bt .open > .btn-default.dropdown-toggle {
   color: #ffffff !important;
   border-color: #e7e7e9;
   background-color: #d59fff;
@@ -27153,6 +27177,72 @@ input[type=radio]:checked:before {
   font-size: 24px;
   font-weight: 700;
   color: #454648;
+}
+
+.cust-but {
+  width: 200px;
+  height: 100px;
+  border-radius: 10px;
+  border: 2px solid #c8a7e1;
+  background-color: transparent;
+  color: #000000;
+  font-size: 2px;
+  font-weight: bold;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cust-but::before {
+  content: "";
+  position: absolute;
+  width: 0%;
+  height: 100%;
+  background-color: #c8a7e1;
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.5s;
+}
+
+.cust-but:hover::before {
+  width: 100%;
+  color: #fff;
+}
+
+.drop-bt :where(.css-foam9q).ant-btn-primary {
+  color: #6c717e !important;
+  border-color: #e7e7e9;
+  background-color: #efe2f8;
+}
+.drop-bt :where(.css-foam9q).ant-btn-primary:not(:disabled):hover {
+  color: #ffffff !important;
+  border-color: #e7e7e9;
+  background-color: #d59fff;
+}
+
+.dash-cont {
+  background: rgb(255, 255, 255);
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 14px;
+}
+
+.dash-cont-2 {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  background: #fff;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  padding: 10px;
 }
 
 /*# sourceMappingURL=theme.compiled.css.map */
