@@ -27232,6 +27232,7 @@ input[type=radio]:checked:before {
   justify-content: space-around;
   align-items: center;
   margin-top: 14px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
 }
 
 .dash-cont-2 {
@@ -27243,6 +27244,19 @@ input[type=radio]:checked:before {
   margin-top: 10px;
   margin-bottom: 10px;
   padding: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 6px -1px, rgba(0, 0, 0, 0.06) 0px 2px 4px -1px;
+}
+
+.btn-primary, .datagrid-fullsearch.mx-grid .mx-grid-search-button {
+  color: #fff;
+  border-color: #ffffff;
+  background-color: #a976d1;
+}
+
+.btn-primary:hover, .datagrid-fullsearch.mx-grid .mx-grid-search-button:hover, .btn-primary:focus, .datagrid-fullsearch.mx-grid .mx-grid-search-button:focus, .btn-primary:active, .datagrid-fullsearch.mx-grid .mx-grid-search-button:active, .btn-primary.active, .datagrid-fullsearch.mx-grid .active.mx-grid-search-button, .open > .btn-primary.dropdown-toggle, .datagrid-fullsearch.mx-grid .open > .dropdown-toggle.mx-grid-search-button {
+  color: #fff;
+  border-color: #1e3bb7;
+  background-color: #d59fff;
 }
 
 /*# sourceMappingURL=theme.compiled.css.map */
