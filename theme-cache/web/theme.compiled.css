@@ -27259,4 +27259,16 @@ input[type=radio]:checked:before {
   background-color: #d59fff;
 }
 
+.custom-listview .mx-listview > ul > li {
+  transition: all 0.3s 0s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: initial;
+  background-color: #ffffff;
+  padding: 16px;
+  /* border-top: 1px solid #ced0d3; */
+  width: 200px;
+  display: inline-block;
+  align-items: center;
+  border: none;
+}
+
 /*# sourceMappingURL=theme.compiled.css.map */
