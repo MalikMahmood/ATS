@@ -27299,7 +27299,7 @@ input[type=radio]:checked:before {
   display: flex;
   justify-content: space-between;
   border-style: none;
-  width: 134%;
+  width: 105%;
 }
 
 .tab-wizard.mx-tabcontainer > .mx-tabcontainer-tabs > li.active > a,
