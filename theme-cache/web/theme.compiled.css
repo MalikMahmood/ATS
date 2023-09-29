@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700&display=swap");
 @import url("resources/fonts/open-sans/open-sans.css");
 @font-face {
   font-family: "Atlas_Core$Atlas_Filled";
@@ -2950,6 +2951,180 @@
 
 .mx-icon-lined.mx-icon-zoom-out::before {
   content: "\ea6d";
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.tab_custome .nav-tabs {
+  border-bottom: 0px;
+  width: fit-content;
+  border-radius: 21px;
+}
+.tab_custome .mx-tabcontainer .mx-tabcontainer-tabs {
+  display: flex;
+  border-color: #C3C3C3;
+  border-bottom: 0.5px solid #C3C3C3;
+  border-top: 0.5px solid #C3C3C3;
+  border-left: 0.5px solid #C3C3C3;
+  border-right: 0.5px solid #C3C3C3;
+  margin-bottom: 0px;
+}
+.tab_custome .mx-tabcontainer .mx-tabcontainer-tabs > li {
+  float: none;
+}
+.tab_custome .mx-tabcontainer .mx-tabcontainer-tabs > li > a {
+  margin-right: 0;
+  transition: all 0s ease;
+  color: #264ae5;
+  text-align: center;
+  font-size: 15px;
+  font-weight: 400;
+  border-radius: 0 0 0 0;
+  min-width: 7em;
+  letter-spacing: 1px;
+  border-radius: 28px;
+  opacity: 1;
+}
+.tab_custome .mx-tabcontainer .mx-tabcontainer-tabs > li > a:hover, .tab_custome .mx-tabcontainer .mx-tabcontainer-tabs > li > a:focus {
+  color: #264ae5;
+  background-color: #dbdddf;
+  border-radius: 27px;
+  outline: none !important;
+}
+.tab_custome .mx-tabcontainer .mx-tabcontainer-tabs > li.active > a, .tab_custome .mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:hover, .tab_custome .mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:focus {
+  color: #ffffff;
+  border: 0.5px solid #0077b5;
+  background-color: #0077b5;
+  border-radius: 27px;
+  outline: none;
+  opacity: 1 !important;
+}
+.tab_custome .mx-tabcontainer .mx-tabcontainer-tabs > li.active > a .mx-tabcontainer-badge, .tab_custome .mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:hover .mx-tabcontainer-badge, .tab_custome .mx-tabcontainer .mx-tabcontainer-tabs > li.active > a:focus .mx-tabcontainer-badge {
+  background-color: #ffffff;
+  color: #0077b5;
+}
+
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  max-width: 30%;
+  margin: auto;
+  text-align: center;
+  font-family: arial;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.profile {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  column-gap: 1.5rem;
+}
+.profile .wrapper-profile-left img {
+  width: 60px;
+}
+
+.wrapper-profile-right {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.wrapper-fullname {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+}
+
+.wrapper-designation {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.wrapper-created-date {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 300;
+  font-size: 12px;
+}
+
+.wrapper-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.wrapper-content-left {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text-content {
+  align-self: flex-start;
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  margin: 1rem 0rem;
+}
+
+.wrapper-content-right {
+  align-self: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 1.5rem;
+  margin: 1rem 0rem;
+}
+
+.btn-update button {
+  background-color: #0077b5 !important;
+  font-family: "Source Sans Pro", sans-serif;
+  color: #ffffff;
+}
+.btn-update button:hover {
+  background-color: #ffffff !important;
+  color: #0077b5;
+}
+
+.img-content img {
+  width: 430px;
+  height: 250px;
+}
+
+.wrapper-btn-post {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0rem;
+}
+
+.wrapper-parent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0rem;
+  column-gap: 1rem;
+}
+
+.wrapper-parent-right {
+  border: 1px solid #C3C3C3;
+  border-radius: 30px;
+  padding: 1rem 2rem;
+  width: 380px;
+}
+
+.text-placeholder {
+  font-family: "Source Sans Pro", sans-serif;
+  font-weight: 600;
+  font-size: 14px;
+  color: #7c7c7c;
 }
 
 /*!
