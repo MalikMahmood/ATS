@@ -27476,6 +27476,22 @@ input[type=radio]:checked:before {
   animation: animate 4s ease-in-out infinite;
 }
 
+.conta h4 {
+  position: absolute;
+  font-size: 2em;
+  margin-top: 10px;
+}
+
+.conta h4:nth-child(3) {
+  color: transparent;
+  -webkit-text-stroke: 2px #8f4dc3;
+}
+
+.conta h4:nth-child(4) {
+  color: #8f4dc3;
+  animation: animate 4s ease-in-out infinite;
+}
+
 @keyframes animate {
   0%, 100% {
     clip-path: polygon(0% 45%, 15% 44%, 32% 50%, 54% 60%, 70% 61%, 84% 59%, 100% 52%, 100% 100%, 0% 100%);
