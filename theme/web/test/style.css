@@ -1,0 +1,12 @@
+.h {
+    color: red;
+    margin-top: 300px;
+}
+
+.divi {
+    display: flex;
+}
+
+.img {
+    margin-left: 400px;
+}
