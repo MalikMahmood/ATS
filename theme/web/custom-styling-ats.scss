@@ -621,7 +621,25 @@ input[type=radio]:checked:before {
 
 
 }
+.conta h4 {
+    position: absolute;
+    // transform: translate(-50%, -50%);
+    font-size: 2em;
+    margin-top: 10px ;
+}
 
+.conta h4:nth-child(3) {
+    color: transparent;
+    -webkit-text-stroke: 2px #8f4dc3;
+
+}
+
+.conta h4:nth-child(4) {
+    color: #8f4dc3;
+    animation: animate 4s ease-in-out infinite;
+
+
+}
 
 
 @keyframes animate {
